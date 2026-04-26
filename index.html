@@ -1,23 +1,319 @@
-<html>
-   <head>
-      <title>Rakesh's Homepage</title>
-      <style>
-         div.day {
-         padding:0.5em;
-         border-style:solid;
-         border-width:2px;
-         background-color:rgb(252,221,163);
-         width:250px;
-         float:right
-         }
-      </style>
-   </head>
-   <body bgcolor="FFFBFB">
-      <center>
-         <a href="index.html">home</a>
-      </center>
-      <center>
-         <h1>Welcome to Rakesh's homepage!</h1>
-      </center>
-   </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Rakesh Sharma</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#hero" class="logo">Portfolio</a>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon sun">☀️</span>
+                    <span class="theme-icon moon">🌙</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-image-wrapper animate-in" style="--delay: 0s">
+                <img src="https://via.placeholder.com/200" alt="Photo of Rakesh Sharma" class="hero-photo">
+            </div>
+            <h1 class="hero-title animate-in" style="--delay: 0.15s">Rakesh Sharma</h1>
+            <p class="hero-subtitle animate-in" style="--delay: 0.3s">Full-Stack Developer &amp; Creative Problem Solver</p>
+            <p class="hero-description animate-in" style="--delay: 0.45s">
+                I build modern, performant web experiences with clean code and thoughtful design.
+            </p>
+            <div class="hero-cta animate-in" style="--delay: 0.6s">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-intro">
+                I'm a software developer with a love for clean code and creative problem-solving.
+                I enjoy turning complex problems into simple, elegant solutions that make a real impact.
+            </p>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Interests</h3>
+                    <ul class="interests-list">
+                        <li><span class="interest-icon">🌐</span> Web Development</li>
+                        <li><span class="interest-icon">🤖</span> Machine Learning</li>
+                        <li><span class="interest-icon">📱</span> Mobile Apps</li>
+                        <li><span class="interest-icon">🎨</span> UI/UX Design</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <h3>Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar"><div class="skill-fill" style="--w: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar"><div class="skill-fill" style="--w: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar"><div class="skill-fill" style="--w: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar"><div class="skill-fill" style="--w: 88%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar"><div class="skill-fill" style="--w: 82%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar"><div class="skill-fill" style="--w: 90%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <span class="project-icon">📊</span>
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-small">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">D3.js</span>
+                        </div>
+                        <h3>Data Dashboard</h3>
+                        <p>Interactive analytics dashboard for real-time data visualization with dynamic charts and filters.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <span class="project-icon">🛒</span>
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-small">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <h3>E-Commerce App</h3>
+                        <p>Full-stack online store with payment integration, user authentication, and inventory management.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <span class="project-icon">🤖</span>
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-small">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">NLP</span>
+                        </div>
+                        <h3>AI Chat Bot</h3>
+                        <p>AI-powered chatbot using natural language processing for customer support automation.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container container-narrow">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-intro">Have a question or want to work together? I'd love to hear from you.</p>
+
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Project Inquiry">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-logo">Portfolio</p>
+                <div class="footer-links">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="mailto:your@email.com" aria-label="Email">Email</a>
+                </div>
+                <p class="footer-copy">&copy; 2026 Rakesh Sharma. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const root = document.documentElement;
+
+        function setTheme(theme) {
+            root.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+        }
+
+        // Load saved theme or respect system preference
+        const saved = localStorage.getItem('theme');
+        if (saved) {
+            setTheme(saved);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            setTheme('dark');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const current = root.getAttribute('data-theme');
+            setTheme(current === 'dark' ? 'light' : 'dark');
+        });
+
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', isOpen);
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Navbar on scroll
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Scroll animations for sections and staggered children
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.section').forEach(s => sectionObserver.observe(s));
+
+        // Hero staggered entrance
+        const heroObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-in').forEach(el => heroObserver.observe(el));
+
+        // Staggered project cards
+        const cardObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.transitionDelay = `${i * 0.15}s`;
+                    entry.target.classList.add('card-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.project-card').forEach(c => cardObserver.observe(c));
+
+        // Skill bar animation
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelectorAll('.skill-fill').forEach(bar => {
+                        bar.classList.add('skill-animate');
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+
+        const skillsCard = document.querySelector('.skills-grid');
+        if (skillsCard) skillObserver.observe(skillsCard.closest('.about-card'));
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+
+</body>
 </html>
